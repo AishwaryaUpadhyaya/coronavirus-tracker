@@ -4,6 +4,24 @@ public class LocationStats {
     private String state;
     private String country;
     private int latestTotalCases;
+    private int previousCases;
+    private int increasedCases;
+
+    public int getIncreasedCases() {
+        return increasedCases;
+    }
+
+    public void setIncreasedCases(int increasedCases) {
+        this.increasedCases = increasedCases;
+    }
+
+    public int getPreviousCases() {
+        return previousCases;
+    }
+
+    public void setPreviousCases(int previousCases) {
+        this.previousCases = previousCases;
+    }
 
     public String getState() {
         return state;
@@ -35,6 +53,7 @@ public class LocationStats {
                 "state='" + state + '\'' +
                 ", country='" + country + '\'' +
                 ", latestTotalCases=" + latestTotalCases +
+                ", previousCases=" + previousCases +
                 '}';
     }
 }
