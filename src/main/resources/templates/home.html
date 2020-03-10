@@ -26,18 +26,18 @@
 </div>
 
 <div class="container">
-    <table>
+    <table class="table">
         <tr>
             <th>State</th>
             <th>Country</th>
             <th>Total Cases Reported</th>
-            <th>New Cases</th>
+            <th> New Cases</th>
         </tr>
         <tr th:each="locationStat : ${locationStats}">
             <td th:text="${locationStat.getState()}"></td>
             <td th:text="${locationStat.getCountry()}"></td>
             <td th:text="${locationStat.getLatestTotalCases()}">0</td>
-            <td th:text="${locationStat.getIncreasedCases()}">0</td>
+            <td th:text="${'  '+locationStat.getIncreasedCases()}">0</td>
         </tr>
     </table>
 </div>
