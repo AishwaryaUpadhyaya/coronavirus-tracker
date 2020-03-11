@@ -28,4 +28,14 @@ public class HomeController {
         model.addAttribute("totalCases",sum);
         return "home";
     }
+
+    @GetMapping("/about-virus")
+    public String aboutVirus(){
+        return "about-virus";
+    }
+
+    @GetMapping("/safety")
+    public String safety(){
+        return "safety";
+    }
 }
