@@ -38,4 +38,9 @@ public class HomeController {
     public String safety(){
         return "safety";
     }
+
+    @GetMapping("/about-developers")
+    public String aboutDevelopers(){
+        return "about-developers";
+    }
 }
