@@ -50,13 +50,7 @@ public class CoronaVirusDataService {
                     locationStats.setIncreasedCases(currentCases-previousCases);
                     newStats.add(locationStats);
          }
-//        int sum = 0;
-//        for(LocationStats us : newStats){
-//            if(us.getCountry().equals("US")){
-//                sum+= us.getLatestTotalCases();
-//            }
-//        }
-//        System.out.println(sum);
+
         this.allStats = newStats;
     }
 }
